@@ -1,27 +1,27 @@
 conky.config = {
 	alignment = 'top_right',
 	background = true,
-	default_color =  '94C973',	
-	color2 = 'B1D8B7',
-	color3 ='76B947',
+	default_color =  'A04116',	
+	color2 = '16A086',
+	color3 ='117E69',
 	cpu_avg_samples = 2,
 	double_buffer = true,
 	font = 'Bitstream Vera Sans:size=8',
 	draw_shades = false,
-	gap_x = 20,
-	gap_y = 10,
+	gap_x = 15,
+	gap_y = 0,
 	minimum_width = 200,
 	no_buffers = true,
 	own_window = true,
 	own_window_type = 'override',
 	own_window_transparent = true,
-	update_interval = 2.5,
+	update_interval = 2.0,
 	use_xft = true,
 }
 conky.text = [[
-${voffset 8}$color${font Bitstream Vera Sans:size=16}${time %A}$font\
-${voffset -8}$alignr$color2${font Bitstream Vera Sans:size=38}${time %e}$font
-$color${voffset -30}$color2${font Bitstream Vera Sans:size=18}${time %b}$font\
+${goto 40}${voffset 8}$color${font Bitstream Vera Sans:size=16}${time %A}$font\
+${goto 40}${voffset -2}$alignr$color2${font Bitstream Vera Sans:size=30}${time %e}$font
+${goto 40}$color${voffset -30}$color2${font Bitstream Vera Sans:size=18}${time %b}$font\
 ${voffset -3} $color2${font Bitstream Vera Sans:size=20}${time %Y}$font$color2$hr
 
 ${voffset 5}${goto 40}${color}${font Bitstream Vera Sans:bold:size=8}PROCESS$alignr$cpu%$font
