@@ -1,0 +1,101 @@
+theme = "semi-build"
+
+#available themes:
+#bad-wolf #dracula #gruvbox-dark #gruvbox-light 
+#modern	#native	#nord-dark #plain #semi-native #semi-build
+#slick #solarized-dark #solarized-light 
+#space-villain
+
+icons = "awesome6"
+
+#available icons
+#awesome #awesome5 #awesome6 #material-nf
+#material
+
+
+[[block]]
+block = "focused_window"
+max_width = 90
+format = "{title}"
+
+#[[block]]
+#block = "music"
+#player = "spotify"
+#format = "{combo}"
+
+#[[block]]
+#block = "cpu"
+#format ="{utilization}{barchart}"
+
+#[[block]]
+#block = "external_ip"
+#format = "IP Pub:{ip} @{country_code}"
+
+#[[block]]
+#block = "disk_space"
+#format = "{icon}Free:{free}{percentage}"
+
+#[[block]]
+#block = "memory"
+#display_type = "memory"
+#clickable = false
+
+#[[block]]
+#block = "memory"
+#display_type = "swap"
+#clickable = false
+
+[[block]]
+block = "net"
+device = "wlp4s0"
+format = "wlp4s0:{ip} @{ssid} {signal_strength}"
+hide_inactive = false
+
+[[block]]
+block = "net"
+device = "enp1s0"
+format = "enp1s0:{ip}"
+hide_inactive = false
+
+#[[block]]
+#block = "toggle"
+#command_state = ""
+
+#[[block]]
+#block = "sound"
+
+#[[block]]
+#block = "backlight"
+
+[[block]]
+block = "time"
+interval = 5
+format = "%a %d %b %R"
+
+#[[block]]
+#block = "watson"
+
+#[[block]]
+#block = "load"
+#format = "{1m}"
+#interval = 1
+
+#[[block]]
+#block = "cpu"
+#format = "{utilization}"
+#interval = 1
+
+#[[block]]
+#block = "xrandr"
+#format = "{brightness}{resolution}"
+
+[[block]]
+block = "battery"
+format = "{percentage}"
+interval = 0.5
+full_format ="FULL"
+
+#[[block]]
+#block = "keyboard_layout"
+#format = "{layout}"
+
